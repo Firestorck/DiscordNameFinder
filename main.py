@@ -8,9 +8,9 @@ if __name__ == "__main__":
     handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
     logging.getLogger().addHandler(logging.StreamHandler())
 
-    with open("config.json") as f:
+    with open("config.json", "r") as f:
         config = json.load(f)
-    with open("key.json") as f:
+    with open("key.json", "r") as f:
         key = json.load(f)
     PREFIX = '$'
 
