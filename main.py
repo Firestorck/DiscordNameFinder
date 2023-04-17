@@ -14,16 +14,16 @@ if __name__ == "__main__":
         key = json.load(f)
     PREFIX = config.get("prefix")
 
+
     intents = discord.Intents.default()
     intents.members = True
     intents.message_content = True
 
     client = discord.Client(intents=intents)
 
-
     @client.event
     async def on_ready():
-        print(f'We have logged in as {client.user}')
+        print(f'Successfully logged in as {client.user}')
 
 
     @client.event

@@ -1,4 +1,7 @@
 {
 	"default_target" : "Captcha.bot",
-	"prefix" : "*"
+	"prefix" : "*",
+	"botfinder_max_processes" : 16,
+	"botfinder_file_unicode" : "unicode_out",
+	"botfinder_file_validated" : "valid_out"
 }
