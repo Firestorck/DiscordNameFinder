@@ -1,0 +1,7 @@
+.venv
+.git
+names
+unicode_out
+valid_out
+key.json
+__pycache__*
