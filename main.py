@@ -12,7 +12,7 @@ if __name__ == "__main__":
         config = json.load(f)
     with open("key.json", "r") as f:
         key = json.load(f)
-    PREFIX = '$'
+    PREFIX = config.get("prefix")
 
     intents = discord.Intents.default()
     intents.members = True
