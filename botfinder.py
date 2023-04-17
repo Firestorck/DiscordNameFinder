@@ -3,7 +3,7 @@ from multiprocessing import Pool, Queue, current_process
 import time
 
 
-TARGET = "Captcha.bot"
+# TARGET = "Captcha.bot"
 MAX_PROCESSES = 16
 INPUT_FILE = "names"
 OUTPUT_FILE_UNICODE = "unicode_out"
@@ -35,6 +35,9 @@ def verify_target(names):
 
 
 def botfinder(names):
+    global TARGET
+    TARGET = names.pop(0)
+    
     global unicode_q
     global verified_q
 #    with open("names") as f:
