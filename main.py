@@ -35,7 +35,7 @@ if __name__ == "__main__":
     @tree.command(name="botfinder", description="Attemps to find bots. Defaults to the name in the config if the field is empty.")
     async def cmd_botfinder(ctx, target: str):
 #        await ctx.response.send_message("Not yet implemented. We're almost there!")
-        role = discord.utils.find(lambda r: r.name == 'i am staff', ctx.guild.roles)
+        role = discord.utils.find(lambda r: r.name == config.get("staff_role"), ctx.guild.roles)
         if role in ctx.user.roles:
 #            await ctx.response.send_message("Not yet implemented. We're almost there!")
             print(target)
