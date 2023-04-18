@@ -5,3 +5,4 @@ unicode_out
 valid_out
 key.json
 __pycache__*
+discord.log
